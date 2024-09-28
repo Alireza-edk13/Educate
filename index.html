@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Educate</title>
+  <link rel="icon" type="image/webp" href="/images/logo.webp" />
+  <meta name="theme-color" content="#121212" />
+  <link rel="manifest" href="/site.webmanifest" />
+</head>
+
+<body class="bg-[#f4f5f5]  font-InterM text-base text-[#2a322d]">
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker.register("/sw.js", { scope: "/" });
+      });
+    }
+  </script>
+</body>
+
+</html>
