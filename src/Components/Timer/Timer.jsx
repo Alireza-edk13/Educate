@@ -9,7 +9,7 @@ export default function Timer() {
 
 
     const updateTime = () => {
-        const countdown = new Date("September 22, 2024 11:59:59").getTime()
+        const countdown = new Date("September 22, 2025 11:59:59").getTime()
         const now = new Date().getTime()
         const distance = countdown - now
 
